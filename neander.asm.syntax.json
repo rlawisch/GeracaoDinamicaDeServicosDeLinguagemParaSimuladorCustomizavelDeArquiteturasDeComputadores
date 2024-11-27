@@ -1,0 +1,98 @@
+{
+  "name": "Neander",
+  "version": "1.0.0",
+  "wordSize": 8,
+  "memory": {
+    "program": [
+      {
+        "lowerBound": 0,
+        "upperBound": 255
+      }
+    ],
+    "data": [
+      {
+        "lowerBound": 0,
+        "upperBound": 255
+      }
+    ]
+  },
+  "registers": ["ACC", "PC"],
+  "instructions": [
+    {
+      "mnemonic": "NOP",
+      "operands": []
+    },
+    {
+      "mnemonic": "STA",
+      "operands": [
+        {
+          "type": "address"
+        }
+      ]
+    },
+    {
+      "mnemonic": "LDA",
+      "operands": [
+        {
+          "type": "address"
+        }
+      ]
+    },
+    {
+      "mnemonic": "ADD",
+      "operands": [
+        {
+          "type": "address"
+        }
+      ]
+    },
+    {
+      "mnemonic": "OR",
+      "operands": [
+        {
+          "type": "address"
+        }
+      ]
+    },
+    {
+      "mnemonic": "AND",
+      "operands": [
+        {
+          "type": "address"
+        }
+      ]
+    },
+    {
+      "mnemonic": "NOT",
+      "operands": []
+    },
+    {
+      "mnemonic": "JMP",
+      "operands": [
+        {
+          "type": "address"
+        }
+      ]
+    },
+    {
+      "mnemonic": "JN",
+      "operands": [
+        {
+          "type": "address"
+        }
+      ]
+    },
+    {
+      "mnemonic": "JZ",
+      "operands": [
+        {
+          "type": "address"
+        }
+      ]
+    },
+    {
+      "mnemonic": "HLT",
+      "operands": []
+    }
+  ]
+}

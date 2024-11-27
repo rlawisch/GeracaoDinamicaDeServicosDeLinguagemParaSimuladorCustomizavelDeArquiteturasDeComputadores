@@ -1,0 +1,740 @@
+{
+  "name": "MIPS",
+  "version": "0.0.1",
+  "registers": [
+    "$zero",
+    "$at",
+    "$v0",
+    "$v1",
+    "$a0",
+    "$a1",
+    "$a2",
+    "$a3",
+    "$t0",
+    "$t1",
+    "$t2",
+    "$t3",
+    "$t4",
+    "$t5",
+    "$t6",
+    "$t7",
+    "$s0",
+    "$s1",
+    "$s2",
+    "$s3",
+    "$s4",
+    "$s5",
+    "$s6",
+    "$s7",
+    "$t8",
+    "$t9",
+    "$k0",
+    "$k1",
+    "$gp",
+    "$sp",
+    "$fp",
+    "$ra"
+  ],
+  "instructions": [
+    {
+      "mnemonic": "nop",
+      "operands": []
+    },
+    {
+      "mnemonic": "add",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "addu",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "sub",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "subu",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "slt",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "sltu",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "and",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "or",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "xor",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "nor",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "mult",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "multu",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "div",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "divu",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "mfhi",
+      "operands": [
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "mflo",
+      "operands": [
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "mthi",
+      "operands": [
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "mtlo",
+      "operands": [
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "srl",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "sll",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "sra",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "srlv",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "sllv",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "srav",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "addi",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "addiu",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "slti",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "sltiu",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "andi",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "ori",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "xori",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "lui",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "beq",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "bne",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "blez",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "bgtz",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "bltz",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "bgez",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "bltzal",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "bgezal",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "j",
+      "operands": [
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "jal",
+      "operands": [
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "jr",
+      "operands": [
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "jalr",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "move",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "register"
+        }
+      ]
+    },
+    {
+      "mnemonic": "li",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "mnemonic": "lw",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "function",
+          "called": "integer",
+          "parameters": [
+            {
+              "type": "register"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mnemonic": "lb",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "function",
+          "called": "integer",
+          "parameters": [
+            {
+              "type": "register"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mnemonic": "lbu",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "function",
+          "called": "integer",
+          "parameters": [
+            {
+              "type": "register"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mnemonic": "lh",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "function",
+          "called": "integer",
+          "parameters": [
+            {
+              "type": "register"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mnemonic": "lhu",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "function",
+          "called": "integer",
+          "parameters": [
+            {
+              "type": "register"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mnemonic": "sb",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "function",
+          "called": "integer",
+          "parameters": [
+            {
+              "type": "register"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mnemonic": "sh",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "function",
+          "called": "integer",
+          "parameters": [
+            {
+              "type": "register"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mnemonic": "sw",
+      "operands": [
+        {
+          "type": "register"
+        },
+        {
+          "type": "function",
+          "called": "integer",
+          "parameters": [
+            {
+              "type": "register"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

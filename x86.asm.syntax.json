@@ -1,0 +1,67 @@
+{
+  "name": "x86",
+  "version": "0.0.1",
+  "registers": ["%ebp", "%esp", "%eax", "%ebx", "%edi", "%esi", "%dl"],
+  "instructions": [
+    {
+      "mnemonic": "pushl"
+    },
+    {
+      "mnemonic": "movl"
+    },
+    {
+      "mnemonic": "subl"
+    },
+    {
+      "mnemonic": "movb"
+    },
+    {
+      "mnemonic": "movsbl"
+    },
+    {
+      "mnemonic": "addb"
+    },
+    {
+      "mnemonic": "addl"
+    },
+    {
+      "mnemonic": "decl"
+    },
+    {
+      "mnemonic": "imull"
+    },
+    {
+      "mnemonic": "xorl"
+    },
+    {
+      "mnemonic": "cmpb"
+    },
+    {
+      "mnemonic": "cmpl"
+    },
+    {
+      "mnemonic": "jl"
+    },
+    {
+      "mnemonic": "jne"
+    },
+    {
+      "mnemonic": "jmp"
+    },
+    {
+      "mnemonic": "leal"
+    },
+    {
+      "mnemonic": "popl"
+    },
+    {
+      "mnemonic": "leave"
+    },
+    {
+      "mnemonic": "call"
+    },
+    {
+      "mnemonic": "ret"
+    }
+  ]
+}
